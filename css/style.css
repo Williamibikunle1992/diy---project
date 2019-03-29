@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+@import url('https://fonts.googleapis.com/css?family=Courgette|Frank+Ruhl+Libre');
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative');
+
+body {
+  /* Remove user agent (browser) stylesheet styling */
+  padding: 23px;
+  margin: 0;
+  background-color: #536B78;
+  font-family: 'Amatic SC', cursive;
+}
+
+h1 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 60px;
+  margin: 10px 0;
+}
+
+nav {
+  margin-top: 40px;
+}
+
+nav a {
+  font-size: 20px;
+  font-family: 'Courgette', cursive;
+  color: #0f0501;
+  text-decoration: none;
+  border-top: solid;
+  padding: 20px;
+}
+
+nav a:hover {
+  color: #fac600;
+}
+
+section {
+  /* Floating elements sit next to each other on one line as far as there is room. Float: left; makes elements sit next to each other starting on the left. We can also use float: right;  */
+  float: left;
+  /* We set a width of 50% to split the screen into two columns */
+  width: 50%;
+  height: 500px;
+  font-size: 30px;
+}
+
+button {
+  font-size: 15px;
+  margin-left: 20px;
+}
+
+h2 {
+  margin: 20px;
+}
+
+section.color1 {
+  background-color: #DFEFEF;
+}
+
+p {
+  margin: 20px;
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 24px;
+}
+
+header {
+  padding: 20px;
+  background-color: #DFEFEF;
+  margin-bottom: 20px;
+  width: 47%;
+}
+
+/* This styles up elements in html with a class of .big-image */
+.big-image {
+  /* This stretches the background images to cover the sections */
+  background-size: cover;
+}
+
+/* These add different background images to the sections with id attributes */
+#topic-one {
+  background-image: url('../images/nomadic/studio45.jpg');
+}
+
+#topic-two {
+  background-image: url('../images/nomadic/studio 46.jpg');
+}
+
+#topic-three {
+  background-image: url('https://placebear.com/g/500/500');
+}
+
+div {
+  /* This moves the topic content vertically down inside the sections with text. To adjust position, increase or decrease the percentage*/
+  transform: translateY(10%);
+}
+
+form {
+  /* This fixes the floated layout and allows us to add height to the form */
+  clear: left;
+  text-align: center;
+  background-color: #DFEFEF;
+  margin-top: 20px;
+}
